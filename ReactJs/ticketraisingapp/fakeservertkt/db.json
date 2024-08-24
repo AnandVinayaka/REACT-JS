@@ -1,0 +1,167 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "0033",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "5639",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "0694",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "2461",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "7758",
+      "username": "user1",
+      "password": "password1",
+      "role": "user"
+    },
+    {
+      "id": "95fa",
+      "username": "user1",
+      "password": "password1",
+      "role": "user"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "timestamp": "2023-12-25T12:00:00",
+      "priority": 1,
+      "description": "Urgent bug fix",
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "timestamp": "2024-01-15T10:30:00",
+      "priority": 3,
+      "description": "Implement a search functionality for tickets",
+      "status": "open"
+    },
+    {
+      "id": 3,
+      "timestamp": "2024-02-02T15:45:00",
+      "priority": 2,
+      "description": "Application crashes when trying to upload large files",
+      "status": "closed"
+    },
+    {
+      "id": 4,
+      "timestamp": "2024-03-07T18:20:00",
+      "priority": 4,
+      "description": "How do I reset my password?",
+      "status": "closed"
+    },
+    {
+      "id": 5,
+      "timestamp": "2024-04-12T11:00:00",
+      "priority": 5,
+      "description": "Add a dark mode option for the application",
+      "status": "open"
+    },
+    {
+      "id": "72d9",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "95aa",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "0b92",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "e423",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "e4cf",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "4e45",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "654f",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "8107",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "8328",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "26f9",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "1c87",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "6507",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "2751",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    }
+  ]
+}
