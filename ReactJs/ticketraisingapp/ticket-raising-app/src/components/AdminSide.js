@@ -1,46 +1,57 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React, { Component } from 'react';
+import axios from 'axios';
 
 class AdminSide extends Component {
   state = {
     tickets: [],
+    adminComments: {} // Store admin comments for each ticket
   };
 
   componentDidMount() {
-    axios
-      .get("http://localhost:3002/tickets")
-      .then((response) => this.setState({ tickets: response.data }));
+    axios.get('http://localhost:3002/tickets')
+      .then(response => this.setState({ tickets: response.data }));
   }
 
-  handleStatusChange = (id, status) => {
-    axios
-      .patch(`http://localhost:3002/tickets/${id}`, { status })
-      .then((response) => {
-        const updatedTickets = this.state.tickets.map((ticket) =>
-          ticket.id === id ? { ...ticket, status: status } : ticket
+  handleStatusChange = (id) => {
+    const { adminComments } = this.state;
+    axios.patch(`http://localhost:3002/tickets/${id}`, { 
+      status: 'closed', 
+      adminComment: adminComments[id] || '' // Add admin comment before closing
+    })
+      .then(response => {
+        const updatedTickets = this.state.tickets.map(ticket =>
+          ticket.id === id ? { ...ticket, status: 'closed', adminComment: adminComments[id] || '' } : ticket
         );
         this.setState({ tickets: updatedTickets });
       });
   };
 
+  handleCommentChange = (e, id) => {
+    const { value } = e.target;
+    this.setState(prevState => ({
+      adminComments: {
+        ...prevState.adminComments,
+        [id]: value
+      }
+    }));
+  };
+
   render() {
     return (
-      <div>
+      <div className='adminside'>
         <h2>Admin Dashboard</h2>
         <ul>
-          {this.state.tickets.map((ticket) => (
-            <li key={ticket.id}>
-              {ticket.description} - {ticket.status}
-              {ticket.status === "open" ? (
-                <button
-                  onClick={() => this.handleStatusChange(ticket.id, "closed")}>
-                  Close
-                </button>
-              ) : (
-                <button
-                  onClick={() => this.handleStatusChange(ticket.id, "open")}>
-                  Reopen
-                </button>
+          {this.state.tickets.map(ticket => (
+            <li key={ticket.id} className={`ticket priority-${ticket.priority}`}>
+              <p><strong>Description:</strong> {ticket.description}</p>
+              <p><strong>Status:</strong> {ticket.status}</p>
+              {ticket.status === 'open' && (
+                <div className='txtareaclsbtn'>
+                  <textarea className='textarea' placeholder='your comments...'
+                    onChange={(e) => this.handleCommentChange(e, ticket.id)}
+                  />
+                  <button onClick={() => this.handleStatusChange(ticket.id)}>Close Ticket</button>
+                </div>
               )}
             </li>
           ))}

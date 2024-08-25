@@ -32,7 +32,7 @@ class UserSide extends Component {
 
   render() {
     return (
-      <div>
+      <div className='userside'>
         <h2>User Dashboard</h2>
         <div>
           <h3>Raise a Ticket</h3>
@@ -44,7 +44,9 @@ class UserSide extends Component {
           <h3>Your Tickets</h3>
           <ul>
             {this.state.tickets.map(ticket => (
-              <li key={ticket.id}>{ticket.description} - {ticket.status}</li>
+              <li key={ticket.id} className={`ticket priority-${ticket.priority}`}>
+                {ticket.description} - {ticket.status}
+              </li>
             ))}
           </ul>
         </div>

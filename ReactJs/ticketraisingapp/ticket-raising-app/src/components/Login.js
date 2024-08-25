@@ -37,7 +37,7 @@ class Login extends Component {
     }
 
     return (
-      <div>
+      <div className='login'>
         <h2>Login</h2>
         <input name="username" onChange={this.handleInputChange} placeholder="Username" />
         <input name="password" type="password" onChange={this.handleInputChange} placeholder="Password" />

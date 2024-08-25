@@ -5,14 +5,14 @@
       "timestamp": "2023-12-25T12:00:00",
       "priority": 1,
       "description": "Urgent bug fix",
-      "status": "closed"
+      "status": "open"
     },
     {
       "id": "2",
       "timestamp": "2023-12-26T13:00:00",
       "priority": 2,
       "description": "Database migration",
-      "status": "closed"
+      "status": "open"
     },
     {
       "id": "3",
@@ -33,7 +33,7 @@
       "timestamp": "2023-12-29T16:00:00",
       "priority": 5,
       "description": "Security update",
-      "status": "closed"
+      "status": "open"
     },
     {
       "id": "6",
@@ -54,7 +54,14 @@
       "timestamp": "2024-08-25T06:18:13.332Z",
       "priority": 1,
       "description": "security update",
-      "status": "closed"
+      "status": "open"
+    },
+    {
+      "id": "9",
+      "timestamp": "2024-08-25T06:40:27.419Z",
+      "priority": 4,
+      "description": "Internet connectivity issue",
+      "status": "open"
     }
   ]
 }

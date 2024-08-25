@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./components/Login";
 import UserSide from "./components/UserSide";
 import AdminSide from "./components/AdminSide";
+import './index.css'
 
 function App() {
   return (
