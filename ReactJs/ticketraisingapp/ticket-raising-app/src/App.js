@@ -1,21 +1,19 @@
 import React from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import LoginPage from "./components/LoginPage";
-import UserTickets from "./components/UserTickets";
-import AdminTickets from "./components/AdminTickets";
-import TicketDetails from "./components/TicketDetails";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./components/Login";
+import UserSide from "./components/UserSide";
+import AdminSide from "./components/AdminSide";
 
-function App(){
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LoginPage></LoginPage>}></Route>
-        <Route path="/" element={<UserTickets></UserTickets>}></Route>
-        <Route path="/" element={<AdminTickets></AdminTickets>}></Route>
-        <Route path="/" element={<TicketDetails></TicketDetails>}></Route>
+        <Route path="/" element={<Login></Login>}></Route>
+        <Route path="/userside" element={<UserSide></UserSide>}></Route>
+        <Route path="/adminside" element={<AdminSide></AdminSide>}></Route>
       </Routes>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
