@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 
-class AdminSide extends Component {
+class AdminSide extends React.Component {
   state = {
     tickets: [],
-    adminComments: {} // Store admin comments for each ticket
+    adminComments: {}
   };
 
   componentDidMount() {
@@ -16,7 +16,7 @@ class AdminSide extends Component {
     const { adminComments } = this.state;
     axios.patch(`http://localhost:3002/tickets/${id}`, { 
       status: 'closed', 
-      adminComment: adminComments[id] || '' // Add admin comment before closing
+      adminComment: adminComments[id] || ''
     })
       .then(response => {
         const updatedTickets = this.state.tickets.map(ticket =>

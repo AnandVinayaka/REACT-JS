@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 import { Navigate } from 'react-router-dom';
 
-class Login extends Component {
+class Login extends React.Component {
   state = {
     username: '',
     password: '',
