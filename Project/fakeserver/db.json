@@ -1,0 +1,35 @@
+{
+  "AdminLoginDetails": [
+    {
+      "id": "8e92",
+      "adminname": "Anand",
+      "adminpassword": "123456",
+      "adminemail": "anand@lyrostech.com",
+      "phonenumber": "7036635218"
+    }
+  ],
+  "UserLoginDetails": [
+    {
+      "id": "e7fb",
+      "username": "Anand vinayaka Palyam",
+      "userpassword": "123456",
+      "useremail": "anand@lyrostech.com",
+      "phonenumber": "7036635218"
+    }
+  ],
+  "react": [],
+  "html": [
+    {
+      "id": "1b8d",
+      "Question": "",
+      "Option1": "",
+      "Option2": "",
+      "Option3": "",
+      "Option4": "",
+      "Answer": ""
+    }
+  ],
+  "css": [],
+  "javascript": [],
+  "results": []
+}

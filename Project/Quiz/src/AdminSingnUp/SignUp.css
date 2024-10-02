@@ -1,0 +1,65 @@
+.signuppage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("paper-with-question-it-that-says-o-it_9493-85814.jpg");
+    background-size:auto;
+    background-position: center;
+  }
+  
+  .form {
+    height: 90vh;
+    width: 500px;
+    background-color: rgb(237, 237, 237, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signupheading {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .heading {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  .button-box {
+    text-align: center;
+  }
+  
+  .createbutton {
+    background-color: #54ad57;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+  }
+  
+  .createbutton:hover {
+    background-color: #3e8e41;
+  }

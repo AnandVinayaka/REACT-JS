@@ -1,0 +1,17 @@
+.main-div{
+    background-color: rgb(170, 238, 150);
+    background-attachment: fixed;
+    background-size: cover; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    text-align: center;
+}

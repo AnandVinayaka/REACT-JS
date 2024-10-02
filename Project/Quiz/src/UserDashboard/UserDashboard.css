@@ -1,0 +1,63 @@
+.userDashboard{
+    background-color: rgb(170, 238, 150);
+    background-attachment: fixed;
+    background-size: cover; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.userDetails{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.422); 
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-links{
+    padding: 20px;
+    text-align: center;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.linkss {
+    text-decoration: underline;
+    color: #007bff;
+    transition: color 0.3s ease;
+    margin-left: 90px;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  .linkss:hover {
+    color: #0056b3;
+  }
+
+  .allLinks{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

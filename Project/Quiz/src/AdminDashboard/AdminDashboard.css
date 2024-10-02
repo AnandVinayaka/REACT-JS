@@ -1,0 +1,62 @@
+
+.adminDashboard {
+    background-color: rgb(150, 216, 238);
+    background-attachment: fixed;
+    background-size: cover; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .adminDetails {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  p{
+    font-size: 18px;
+    margin: 5px;
+    color: #333;
+  }
+  
+  .admin-links{
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .links {
+    text-decoration: underline;
+    color: #007bff;
+    transition: color 0.3s ease;
+    
+    font-weight: bolder;
+  }
+  
+  .links:hover {
+    color: #0056b3;
+  }
+
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

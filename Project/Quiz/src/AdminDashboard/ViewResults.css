@@ -1,0 +1,12 @@
+.results{
+    display: flex;
+    flex-direction: row;
+}
+
+.individualResults{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+}
